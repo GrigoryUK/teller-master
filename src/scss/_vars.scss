@@ -1,5 +1,5 @@
 :root {
-  --font-family: "Helvetica", "Georgia", "PPRightGrotesk-tall", "PPRightGrotesk-medium", "PPRightGrotesk-text";
+  --font-family: "Helvetica", "Georgia", 'PP Right Grotesk';
   --content-width: 1200px;
   --content-desktop: 1920px;
   --content-text: 996px;
@@ -8,6 +8,11 @@
   --container-text: calc(var(--content-text) + (var(--container-offset) * 2));
   --container-desktop: calc(var(--content-desktop) + (var(--container-offset) * 2));
 
+  // fonts
+  --font-primary: 'Helvetica', sans-sarif;
+  --font-secondary: 'Georgia', sans-sarif;
+  --font-third: 'PP Right Grotesk', sans-sarif;
+  // color
   --light-color: #ffffff;
   --black: #000000;
   --light-gray: #ede7e1;

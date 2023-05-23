@@ -129,14 +129,14 @@ a {
 }
 
 h1 {
-  font-family: "PPRightGrotesk-tall";
+  font-family: var(--font-third);
   font-weight: 400;
   font-size: 100px;
   line-height: 84px;
 }
 
 h3 {
-  font-family: "Helvetica";
+  font-family: var(--font-primary);
   font-weight: 700;
   font-size: 28px;
   line-height: 36px;
@@ -149,21 +149,21 @@ h3 {
 }
 
 h4 {
-  font-family: "Helvetica";
+  font-family: var(--font-primary);
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
 }
 
 h5 {
-  font-family: "Helvetica";
+  font-family: var(--font-primary);
   font-weight: 400;
   font-size: 10px;
   line-height: 16px;
 }
 
 p {
-  font-family: "Georgia";
+  font-family: var(--font-secondary);
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
@@ -186,6 +186,17 @@ a {
     line-height: 24px;
   }
 }
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+  @include mobile {
+    height: auto;
+  }
+}
+
 
 /* stylelint-disable */ /* stylelint-disable */ /* stylelint-disable */
 .custom-checkbox__field:checked + .custom-checkbox__content::after {
