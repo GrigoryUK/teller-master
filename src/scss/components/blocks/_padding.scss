@@ -1,0 +1,14 @@
+.paddingC {
+
+  &.primary {
+    padding-top: 80px;
+
+    @include tablet {
+      padding-top: 44px;
+    }
+
+    @include mobile {
+      padding-top: 2rem;
+    }
+  }
+}

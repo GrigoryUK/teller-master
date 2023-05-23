@@ -1,0 +1,25 @@
+:root {
+  --font-family: "Helvetica", "Georgia", "PPRightGrotesk-tall", "PPRightGrotesk-medium", "PPRightGrotesk-text";
+  --content-width: 1200px;
+  --content-desktop: 1920px;
+  --content-text: 996px;
+  --container-offset: 16px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-text: calc(var(--content-text) + (var(--container-offset) * 2));
+  --container-desktop: calc(var(--content-desktop) + (var(--container-offset) * 2));
+
+  --light-color: #ffffff;
+  --black: #000000;
+  --light-gray: #ede7e1;
+  --input-gray: #fafafa;
+  --gray: #bdbdbd;
+  --beige: #fff8f0;
+  --light-gray-input: #f9f3ec;
+  --black-hover: #42403e;
+  --gray-header-input: #757575;
+  --strong-gray: #616161;
+  --gray-800: #424242;
+  --yellow: #f8b627;
+  --gray-hover: #74726e;
+  --gray-silver: #605e5b;
+}

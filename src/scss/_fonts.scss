@@ -1,0 +1,50 @@
+// @include font-face("Muller", "../fonts/MullerRegular", 400, normal);
+@font-face {
+  font-family: "Georgia";
+  src: url("../fonts/../fonts/Georgia.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/../fonts/HelveticaNeueCyrLight.woff2") format("woff2");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/../fonts/HelveticaNeueCyrRoman.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/../fonts/HelveticaNeueCyrBold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PPRightGrotesk-medium";
+  src: url("../fonts/../fonts/PPRightGroteskMedium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PPRightGrotesk-tall";
+  src: url("../fonts/../fonts/PPRightGroteskTallRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PPRightGrotesk-text";
+  src: url("../fonts/../fonts/PPRightGroteskTextRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
