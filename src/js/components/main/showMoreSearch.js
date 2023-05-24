@@ -1,5 +1,5 @@
 
-export default function searchMoreJs() {
+export default function showMoreSearch() {
   const showMoreMSearch = document.querySelector('.btn__Msearch-also');
 
 

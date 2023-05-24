@@ -1,0 +1,62 @@
+.buttonC {
+  border: none;
+  background: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &.border-mobile {
+    @include mobile {
+      border-radius: 20px;
+    }
+  }
+
+  &.primary {
+    border-radius: 4px;
+    padding-top: 9px;
+    padding-bottom: 7px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--beige);
+    background: var(--black);
+
+    @include mobile {
+      padding: 8px 0;
+      font-size: 12px;
+      line-height: 24px;
+    }
+
+    @include hover {
+      background: var(--black-hover);
+    }
+  }
+
+  &.buttonC-close {
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    &-author {
+      span {
+        position: absolute;
+        left: 0%;
+        width: 100%;
+        height: 2px;
+        background-color: var(--beige);
+        transition: all 0.2s ease;
+
+        &:first-child {
+          transform: rotate(45deg) translateY(50%);
+        }
+
+        &:last-child {
+          transform: rotate(-45deg) translateY(0%);
+        }
+      }
+    }
+  }
+}

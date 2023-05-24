@@ -1,0 +1,93 @@
+.TitleC {
+  &.font-three {
+    font-family: var(--font-third);
+
+    &.primary {
+      font-weight: 400;
+      font-style: normal;
+      font-size: 72px;
+      line-height: 60px;
+
+      @include mobile {
+        font-size: 40px;
+        line-height: 36px;
+      }
+    }
+  }
+}
+
+.TextC {
+  p {
+    margin: 0;
+  }
+
+  &.font-one {
+    p {
+      font-family: var(--font-primary);
+    }
+  }
+
+  &.standard {
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+
+      @include mobile {
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  &.standard-small {
+    p {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+}
+
+.inputC {
+  &.primary {
+    width: 100%;
+
+    .inputC__info {
+      display: block;
+      margin-bottom: 4px;
+      font-family: var(--font-primary);
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    input,
+    textarea {
+      outline: none;
+      border: 1px solid var(--black);
+      border-radius: 4px;
+      padding: 0 4px;
+      width: 100%;
+      font-size: 18px;
+      line-height: 28px;
+      background: var(--beige);
+
+      @include mobile {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    input {
+      height: 32px;
+    }
+
+    textarea {
+      height: 128px;
+      resize: none;
+    }
+  }
+}

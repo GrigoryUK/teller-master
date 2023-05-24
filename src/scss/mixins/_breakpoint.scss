@@ -29,3 +29,16 @@
     @content;
   }
 }
+
+@mixin mbAll($desk, $tablet, $mobile) {
+
+  margin-bottom: #{$desk}px;
+
+  @include tablet {
+    margin-bottom: #{$tablet}px;
+  }
+
+  @include mobile {
+    margin-bottom: #{$mobile}px;
+  }
+}

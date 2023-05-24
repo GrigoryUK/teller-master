@@ -1,0 +1,32 @@
+.searchArticle {
+  margin: 56px 0;
+
+  @include mobile {
+    margin: 44px 0;
+  }
+
+  .container {
+    @include mobile {
+      padding: 0;
+    }
+  }
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+
+    @include small-tablet {
+      flex-direction: column;
+      gap: 44px;
+    }
+  }
+
+  &__new {
+    text-align: center;
+
+    @include mobile {
+      padding: 0 16px;
+      text-align: left;
+    }
+  }
+}

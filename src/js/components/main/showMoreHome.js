@@ -1,12 +1,12 @@
 
-export default function showMore() {
+export default function showMoreHome() {
   const showMore = document.querySelector('.show-more');
   const showMoreSpun = document.querySelector('.show-more-span');
   const loading = document.querySelector('.loading');
   const productsLength = document.querySelectorAll('.also__show').length;
   let items = 3;
 
-  if (document.body.contains(showMore)) {
+  if (productsLength) {
     showMore.addEventListener('click', el => {
       showMoreSpun.style.display = 'none';
       loading.classList.add('donat');

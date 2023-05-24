@@ -1,0 +1,146 @@
+.subsC {
+  &.primary {
+    margin: 56px 0;
+
+    .container {
+      @include small-tablet {
+        padding: 0;
+      }
+    }
+
+    .subsC__container {
+      display: flex;
+      justify-content: space-between;
+      background: var(--light-gray);
+      gap: 24px;
+
+      @include small-tablet {
+        flex-direction: column-reverse;
+      }
+    }
+
+    .subsC__box {
+      margin-left: 102px;
+      padding: 64px 0;
+      width: 100%;
+      max-width: 588px;
+
+      .TitleC {
+        margin-bottom: 26px;
+
+        @include mobile {
+          margin-bottom: 20px;
+        }
+      }
+
+      .TextC {
+        margin-bottom: 26px;
+
+        @include mobile {
+          margin-bottom: 20px;
+        }
+      }
+
+      .buttonC.primary {
+        max-width: 282px;
+
+        @include mobile {
+          max-width: 100%;
+        }
+      }
+
+      @include tablet {
+        margin-left: 16px;
+        padding: 32px 0;
+      }
+
+      @include small-tablet {
+        margin-left: 0;
+        padding: 0 16px 24px;
+      }
+    }
+
+    @include mobile {
+      margin: 44px 0;
+    }
+  }
+}
+
+.randomC {
+  &.primary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 486px;
+    background: var(--light-gray-input);
+    gap: 10px;
+
+    .image-one {
+      max-height: 274px;
+    }
+
+    .image-two {
+      max-height: 274px;
+    }
+
+    .randomC__cont {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 426px;
+      text-align: center;
+
+      .TitleC {
+        @include mbAll(16, 16, 12);
+      }
+
+      .TextC {
+        @include mbAll(32, 32, 24);
+      }
+
+      .buttonC {
+        max-width: 200px;
+
+        @include mobile {
+          max-width: 100%;
+        }
+      }
+
+      @include mobile {
+        padding: 0 16px;
+      }
+    }
+
+    @include small-tablet {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+.itemC-also {
+  transition: all 1s ease-in-out;
+
+  &.is-active {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  &.is-visible {
+    display: block !important;
+  }
+}
+
+.blockC-also-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 56px;
+
+  .show-more {
+    @include mobile {
+      width: 100%;
+    }
+  }
+}
+
+

@@ -59,7 +59,7 @@ export default function checkEmailJS() {
   }
 
   function destroyAll(elems) {
-    for (var i = 0; i < elems.length; i++) elems[i].style.display = 'none';
+    for (let i = 0; i < elems.length; i++) elems[i].style.display = 'none';
   }
 
   function opacity(el) {

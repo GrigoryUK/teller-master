@@ -3,6 +3,10 @@ html {
   box-sizing: border-box;
 }
 
+.site-container {
+  overflow: hidden;
+}
+
 *,
 *::before,
 *::after {
@@ -211,4 +215,8 @@ img {
 .custom-checkbox__field:disabled + .custom-checkbox__content {
   opacity: 0.4;
   pointer-events: none;
+}
+
+.image-flex {
+  display: flex;
 }

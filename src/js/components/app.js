@@ -1,24 +1,29 @@
-import choiceJS from "./main/showMoreChoice";
+import showMoreChoice from "./main/showMoreChoice";
 import header from "./main/header";
 import Modal from "./main/modal";
 import accordionJs from "./main/accordion";
 import burgerJs from "./main/burger";
-import searchMoreJs from "./main/showMoreSearch";
-import showMore from "./main/showMore";
+import showMoreSearch from "./main/showMoreSearch";
+import showMoreHome from "./main/showMoreHome";
 import checkEmailJS from "./main/validationCheckEmail";
 import subsJs from "./main/validationSubs";
 import slidersJs from "./main/sliders";
+import validationAuthorForm from './main/validationAuthorForm'
+import showMore from './helpers/showMore'
 
 document.addEventListener("DOMContentLoaded", (event) => {
   Modal();
   header();
-  choiceJS();
-  showMore()
-  searchMoreJs()
+  showMoreChoice();
+  showMoreHome()
+  showMoreSearch()
   accordionJs()
   burgerJs()
   checkEmailJS()
   subsJs()
   slidersJs()
+  validationAuthorForm()
+  showMore('.material__cont-blocks', 9, 9, 3)
+  showMore('.authors__content', 18, 18, 6)
 });
 

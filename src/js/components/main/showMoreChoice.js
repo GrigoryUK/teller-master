@@ -1,4 +1,4 @@
-export default function choiceJS() {
+export default function showMoreChoice() {
   const showMoreChoice = document.querySelector(".btn__choice");
 
   if (showMoreChoice) {
