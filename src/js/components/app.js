@@ -10,6 +10,7 @@ import subsJs from "./main/validationSubs";
 import slidersJs from "./main/sliders";
 import validationAuthorForm from './main/validationAuthorForm'
 import showMore from './helpers/showMore'
+import randomPage from './main/randomPage'
 
 document.addEventListener("DOMContentLoaded", (event) => {
   Modal();
@@ -23,6 +24,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   subsJs()
   slidersJs()
   validationAuthorForm()
+  randomPage()
   showMore('.material__cont-blocks', 9, 9, 3)
   showMore('.authors__content', 18, 18, 6)
 });

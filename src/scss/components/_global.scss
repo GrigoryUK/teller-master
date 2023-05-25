@@ -143,4 +143,22 @@
   }
 }
 
+.caption__span {
+  position: relative;
 
+  @include hover {
+    text-decoration: underline;
+  }
+}
+
+.caption__container {
+  padding-top: 80px;
+
+  @include mobile {
+    padding-top: 44px;
+  }
+}
+
+.caption__h5 {
+  margin: 0;
+}
