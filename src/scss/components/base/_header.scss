@@ -1,0 +1,59 @@
+.header {
+  .header-random-link {
+    margin-left: 24px;
+    font-size: 12px;
+    line-height: 16px;
+
+    @include hover {
+      text-decoration: underline;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  .link-teller-primary {
+    margin-right: 24px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+
+    @include hover {
+      text-decoration: underline;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  .header__sticky {
+    position: relative;
+
+    .nav__link--logo {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      z-index: 10;
+      margin-bottom: -16px;
+      transform: translateX(-50%);
+    }
+
+    .nav__logo {
+      margin: 0;
+      padding: 0;
+    }
+
+
+  }
+
+  .menu__icon span {
+    height: 1px;
+  }
+
+  .btn__seacrhM {
+    width: 20px;
+    height: 20px;
+  }
+}

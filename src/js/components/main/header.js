@@ -12,12 +12,12 @@ export default function header() {
       let scrollDistance = window.scrollY;
 
       if (scrollDistance >= headerLogoHeight) {
-        headerList.classList.add("hidden");
+        // headerList.classList.add("hidden");
         navCont.classList.add("visible");
         navMenuList.classList.add("active");
         navMenuListburger.classList.add("active");
       } else {
-        headerList.classList.remove("hidden");
+        // headerList.classList.remove("hidden");
         navCont.classList.remove("visible");
         navMenuList.classList.remove("active");
         navMenuListburger.classList.remove("active");

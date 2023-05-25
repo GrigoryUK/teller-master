@@ -184,6 +184,25 @@
   &__image {
     position: relative;
 
+    &-active {
+      @include hover {
+        .randomPage__image-fon {
+          opacity: 1;
+          visibility: visible;
+
+          @include tablet {
+            opacity: 0;
+            visibility: hidden;
+          }
+        }
+
+        .randomPage__image-cont {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+
     img {
       display: flex;
       height: calc(100vh - 180px);
@@ -280,21 +299,6 @@
       }
     }
 
-    @include hover {
-      .randomPage__image-fon {
-        opacity: 1;
-        visibility: visible;
 
-        @include tablet {
-          opacity: 0;
-          visibility: hidden;
-        }
-      }
-
-      .randomPage__image-cont {
-        opacity: 1;
-        visibility: visible;
-      }
-    }
   }
 }

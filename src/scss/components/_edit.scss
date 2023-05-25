@@ -71,13 +71,12 @@
   display: none;
 }
 .nav__list-burger {
-  margin: 12px 0px 12px 0px;
+  margin: 32px 0px 40px 0px;
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 .nav__list-burger.active {
-  margin: 32px 0px 40px 0px;
 }
 .nav__list-simple {
   margin: 32px 0px 40px 0px;
@@ -333,16 +332,12 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  visibility: hidden;
-  opacity: 0;
 }
 .nav__menu-header-simple {
   visibility: visible;
   opacity: 1;
 }
 .nav__menu-header.active {
-  visibility: visible;
-  opacity: 1;
 }
 .nav__menu-mobile {
   display: none;
@@ -368,7 +363,7 @@
     height: 100vh;
   }
   .nav__menu-mobile.active {
-    top: 49px;
+    top: auto;
     z-index: 1;
     background: var(--beige);
     opacity: 1;
@@ -572,16 +567,12 @@
 
 .menu__icon span {
   position: absolute;
-  left: 25%;
-  top: 17px;
-  height: 2px;
+  left: 8px;
+  top: 50%;
+  height: 1px;
   width: 16px;
   background-color: var(--black);
-  -webkit-transition: all 0.3s cubic-bezier(0.5, 0.2, 0.2, 1);
-  -o-transition: all 0.3s cubic-bezier(0.5, 0.2, 0.2, 1);
-  transition: all 0.3s cubic-bezier(0.5, 0.2, 0.2, 1);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
+  transition: all 0.3s ease;
   transform: translateX(-50%) translateY(-50%);
 }
 
@@ -593,30 +584,20 @@
   margin-top: 5px;
 }
 
-.menu__icon.active span {
-  left: 0px;
-  top: 17px;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
+.menu__icon.active span:nth-child(2) {
+  opacity: 0;
 }
 
 .menu__icon.active span:first-child {
-  -webkit-transition: all 0.3s cubic-bezier(0.5, 0.2, 0.2, 1);
-  -o-transition: all 0.3s cubic-bezier(0.5, 0.2, 0.2, 1);
-  transition: all 0.3s cubic-bezier(0.5, 0.2, 0.2, 1);
-  -webkit-transform: translateY(5px) rotate(45deg);
-  -ms-transform: translateY(5px) rotate(45deg);
-  transform: translateY(5px) rotate(45deg);
+  margin-top: 0px;
+  left: -2px;
+  transform: rotate(45deg);
 }
 
 .menu__icon.active span:last-child {
-  -webkit-transition: all 0.3s cubic-bezier(0.5, 0.2, 0.2, 1);
-  -o-transition: all 0.3s cubic-bezier(0.5, 0.2, 0.2, 1);
-  transition: all 0.3s cubic-bezier(0.5, 0.2, 0.2, 1);
-  -webkit-transform: translateY(-5px) rotate(-45deg);
-  -ms-transform: translateY(-5px) rotate(-45deg);
-  transform: translateY(-5px) rotate(-45deg);
+  margin-top: 0px;
+  left: -2px;
+  transform: rotate(-45deg);
 }
 
 .menu__icon-mobile {

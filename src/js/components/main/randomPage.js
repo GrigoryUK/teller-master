@@ -12,7 +12,6 @@ export default function randomPage() {
     const ButtonTwo = $( ".randomPage__images-button" );
     const ButtonTest = $( ".test-button" );
     const containerImages = $( ".randomPage__images-container" );
-
     const colorHover = '#fa5245';
 
     ButtonOne.on( "click", function() {
@@ -38,49 +37,51 @@ export default function randomPage() {
     function AnimFrame() {
       const tl = gsap.timeline({ defaults: { duration: 0.7 } });
       tl.to(containerImages,{opacity: 1, y: 0})
-
+      tl.add(() => $('.randomPage__image').addClass('randomPage__image-active'))
       tl.progress(0)
-
       return tl
     }
 
     async function AnimFrameImages() {
       const tl = gsap.timeline({ defaults: { duration: 0.7 } });
       if (isDesktop()) {
+        tl.add(() => $('.randomPage__image').removeClass('randomPage__image-active'))
         tl.to(containerImages,{opacity: 0, y: '20%'})
       }
       if (isTablet() || isMobile()) {
         tl.to(containerImages,{opacity: 0, y: '-10%'})
       }
-      // убрать вот эту функцию и написать свою
-      tl.add(setRandomImage())
+
+      tl.add(setTimeout(() => {
+        // убрать вот эту функцию и написать свою
+        setRandomImage()
+      }, 300))
       if (isDesktop()) {
-        tl.to(containerImages,{opacity: 1, y: '0'})
+        tl.to(containerImages,{opacity: 1, y: '0', delay: 0.5})
+        tl.add(() => $('.randomPage__image').addClass('randomPage__image-active'))
       }
       if (isTablet() || isMobile()) {
-        tl.to(containerImages,{opacity: 1, y: '0'})
+        tl.to(containerImages,{opacity: 1, y: '0', delay: 0.5})
       }
       tl.progress(0)
 
       return tl
     }
 
+
+
     async function setRandomImage() {
       const data = await logJSONDataOne()
       const dataTwo = await logJSONDataTwo()
       const imageLeft = $('.randomPage__image-left')
       const imageRight = $('.randomPage__image-right')
-      setTimeout(() => {
-        imageLeft.find('.randomPage__image-title').text(data.title)
-        imageRight.find('.randomPage__image-title').text(dataTwo.title)
-        imageLeft.find('img').attr("src", `${data.url}`);
-        imageRight.find('img').attr("src", `${dataTwo.url}`);
-      }, 500)
+      await imageLeft.find('.randomPage__image-title').text(data.title)
+      await imageRight.find('.randomPage__image-title').text(dataTwo.title)
+      await imageLeft.find('img').attr("src", `${data.url}`);
+      await imageRight.find('img').attr("src", `${dataTwo.url}`);
+
+      return true;
     }
-
-
-
-
 
     async function logJSONDataTwo() {
       let randomNumber = getRandomInt(1, 40);
